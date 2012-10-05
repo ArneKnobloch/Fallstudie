@@ -1,0 +1,2 @@
+serviceClass: de.macbarfuss.studentselector.client.StudentSelectorService
+path: B13BB6DF41A7E49BB234F54867250D4F.gwt.rpc

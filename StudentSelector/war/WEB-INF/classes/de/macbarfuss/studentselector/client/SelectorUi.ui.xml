@@ -1,0 +1,33 @@
+<!-- Diese Datei enthält wenig Überraschungen für euch. Einzig die VerticalPanel und HorizontalPanel
+habe ich noch nicht angesprochen. Sie helfen das UI zu ordnen. -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:d="urn:import:com.google.gwt.dom.client">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.chosenName {
+			font-size: 20pt;
+		}
+	</ui:style>
+	<g:VerticalPanel>
+		<g:HTMLPanel>
+			<h1>Student Selector</h1>
+		</g:HTMLPanel>
+		<g:HorizontalPanel>
+			<g:VerticalPanel width="350px">
+				<g:FlowPanel>
+					<g:TextBox ui:field="newName" />
+					<g:Button ui:field="addBtn" text="add" />
+				</g:FlowPanel>
+				<g:ListBox ui:field="students" visibleItemCount="30" width="300px" />
+				<g:Button ui:field="removeBtn" text="remove" />
+			</g:VerticalPanel>
+			<g:VerticalPanel>
+				<g:Button styleName="{style.important}" ui:field="nextBtn" text="getNext" />
+				<g:Label ui:field="chosenName" styleName="{style.chosenName}" />
+			</g:VerticalPanel>
+		</g:HorizontalPanel>
+	</g:VerticalPanel>
+</ui:UiBinder>
